@@ -1,29 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-    <head>
-        <title>The Dormouse's story</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dormouse's Story</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .titles {
+            background: #333;
+            color: #fff;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+        .titles b {
+            display: block;
+            padding: 5px 0;
+        }
+        .story {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .story a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .story a:hover {
+            text-decoration: underline;
+        }
+        .favorite-titles {
+            margin-top: 20px;
+        }
+        .favorite-titles h3 {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
 <body>
-    <p1 class="Series titles">
-        <b>Story series #1</b>
-        <b>Story series #2</b>
-        <b>Story series #3</b>
-        <b>Story series #4</b>
-        <b>Story series #5</b>
-    </p1>
-    <p2 class="story">
-        Once upon a time there were three little sisters; and their names were
-        <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
-        <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
-        <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
-        and they lived at the bottom of a well.
-    </p2>
-    
-    <p3 class="story">
-        <title>I Love Music!</title>
-        <title>I Love Python!</title>
-        <title>I Love Analytics!</title>
-    </p3>
+    <div class="container">
+        <div class="titles">
+            <b>Story Series #1</b>
+            <b>Story Series #2</b>
+            <b>Story Series #3</b>
+            <b>Story Series #4</b>
+            <b>Story Series #5</b>
+        </div>
+        
+        <div class="story">
+            <p>
+                Once upon a time there were three little sisters; and their names were
+                <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
+                <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a>, and
+                <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
+                and they lived at the bottom of a well.
+            </p>
+        </div>
+        
+        <div class="story favorite-titles">
+            <h3>Favorite Titles</h3>
+            <ul>
+                <li>I Love Music!</li>
+                <li>I Love Python!</li>
+                <li>I Love Analytics!</li>
+            </ul>
+        </div>
+    </div>
 </body>
-</html>    
+</html>
