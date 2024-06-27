@@ -3,63 +3,80 @@
 <head>
     <title>Book List</title>
     <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
+        body {
+            font-family: Arial, sans-serif;
         }
-        th, td {
+        .book {
+            border: 1px solid #ccc;
             padding: 10px;
-            text-align: left;
-            border: 1px solid #ddd;
+            margin: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
-        th {
-            background-color: #f4f4f4;
+        .book-title {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .book a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        .book a:hover {
+            text-decoration: underline;
+        }
+        .book-info {
+            margin-top: 10px;
+        }
+        .book-info span {
+            display: block;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Book List</h1>
+    <div class="book" category="cooking">
+        <div class="book-title">
+            <a href="http://www.cnn.com">Everyday Italian</a>
+        </div>
+        <div>Author: Giada De Laurentiis</div>
+        <div class="book-info">
+            <span>Year: 2005</span>
+            <span>Price: $30.00</span>
+        </div>
+    </div>
 
-    <table>
-        <tr>
-            <th>Category</th>
-            <th>Title</th>
-            <th>Author(s)</th>
-            <th>Year</th>
-            <th>Price</th>
-        </tr>
-        <tr>
-            <td>Cooking</td>
-            <td><a href="http://www.cnn.com">Everyday Italian</a></td>
-            <td>Giada De Laurentiis</td>
-            <td>2005</td>
-            <td>$30.00</td>
-        </tr>
-        <tr>
-            <td>Children</td>
-            <td><a href="http://www.ksu.com">Harry Potter</a></td>
-            <td>J K. Rowling</td>
-            <td>2005</td>
-            <td>$29.99</td>
-        </tr>
-        <tr>
-            <td>Web</td>
-            <td><a href="http://www.ku.com">XQuery Kick Start</a></td>
-            <td>
-                James McGovern, Per Bothner, Kurt Cagle, 
-                James Linn, Vaidyanathan Nagarajan
-            </td>
-            <td>2003</td>
-            <td>$49.99</td>
-        </tr>
-        <tr>
-            <td>Web</td>
-            <td><a href="http://www.wsu.com">Learning XML</a></td>
-            <td>Erik T. Ray</td>
-            <td>2003</td>
-            <td>$39.95</td>
-        </tr>
-    </table>
+    <div class="book" category="children">
+        <div class="book-title">
+            <a href="http://www.ksu.com">Harry Potter</a>
+        </div>
+        <div>Author: J K. Rowling</div>
+        <div class="book-info">
+            <span>Year: 2005</span>
+            <span>Price: $29.99</span>
+        </div>
+    </div>
+
+    <div class="book" category="web">
+        <div class="book-title">
+            <a href="http://www.ku.com">XQuery Kick Start</a>
+        </div>
+        <div>Authors: James McGovern, Per Bothner, Kurt Cagle, James Linn, Vaidyanathan Nagarajan</div>
+        <div class="book-info">
+            <span>Year: 2003</span>
+            <span>Price: $49.99</span>
+        </div>
+    </div>
+
+    <div class="book" category="web">
+        <div class="book-title">
+            <a href="http://www.wsu.com">Learning XML</a>
+        </div>
+        <div>Author: Erik T. Ray</div>
+        <div class="book-info">
+            <span>Year: 2003</span>
+            <span>Price: $39.95</span>
+        </div>
+    </div>
 </body>
 </html>
+
