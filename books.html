@@ -2,54 +2,64 @@
 <html>
 <head>
     <title>Book List</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
 </head>
 <body>
-    <book category="cooking">
-        <title lang="en" coverimage="cnn.jpg">
-            <a href="http://www.cnn.com">Everyday Italian</a>
-        </title>
-        <author>Giada De Laurentiis</author>
-        <info>
-            <year>2005</year>
-            <price>30.00</price>
-        </info>
-    </book>
+    <h1>Book List</h1>
 
-    <book category="children">
-        <title lang="en" coverimage="children.jpg">
-            <a href="http://www.ksu.com">Harry Potter</a>
-        </title>
-        <author>J K. Rowling</author>
-        <info>
-            <year>2005</year>
-            <price>29.99</price>
-        </info>
-    </book>
-
-    <book category="web">
-        <title lang="en" coverimage="web.jpg">
-            <a href="http://www.ku.com">XQuery Kick Start</a>
-        </title>
-        <author>James McGovern</author>
-        <author>Per Bothner</author>
-        <author>Kurt Cagle</author>
-        <author>James Linn</author>
-        <author>Vaidyanathan Nagarajan</author>
-        <info>
-            <year>2003</year>
-            <price>49.99</price>
-        </info>
-    </book>
-
-    <book category="web">
-        <title lang="en" coverimage="XML.jpg">
-            <a href="http://www.wsu.com">Learning XML</a>
-        </title>
-        <author>Erik T. Ray</author>
-        <info>
-            <year>2003</year>
-            <price>39.95</price>
-        </info>
-    </book>
+    <table>
+        <tr>
+            <th>Category</th>
+            <th>Title</th>
+            <th>Author(s)</th>
+            <th>Year</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Cooking</td>
+            <td><a href="http://www.cnn.com">Everyday Italian</a></td>
+            <td>Giada De Laurentiis</td>
+            <td>2005</td>
+            <td>$30.00</td>
+        </tr>
+        <tr>
+            <td>Children</td>
+            <td><a href="http://www.ksu.com">Harry Potter</a></td>
+            <td>J K. Rowling</td>
+            <td>2005</td>
+            <td>$29.99</td>
+        </tr>
+        <tr>
+            <td>Web</td>
+            <td><a href="http://www.ku.com">XQuery Kick Start</a></td>
+            <td>
+                James McGovern, Per Bothner, Kurt Cagle, 
+                James Linn, Vaidyanathan Nagarajan
+            </td>
+            <td>2003</td>
+            <td>$49.99</td>
+        </tr>
+        <tr>
+            <td>Web</td>
+            <td><a href="http://www.wsu.com">Learning XML</a></td>
+            <td>Erik T. Ray</td>
+            <td>2003</td>
+            <td>$39.95</td>
+        </tr>
+    </table>
 </body>
 </html>
